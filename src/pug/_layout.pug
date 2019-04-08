@@ -1,16 +1,13 @@
 block const
 -
-    const title  = `${name ?  `${name} - ` : ''}Project`;
+    const title  = `${name ?  `${name} - ` : ''}Lord`;
     const descr  = 'Description';
-    const domain = 'subdomain.salex.pro'
-
-mixin icon(name, size, color, viewbox)
-    - viewbox = viewbox || size
-    svg(xmlns='http://www.w3.org/2000/svg' width=size[0] height=size[1] viewbox=viewbox ? "0 0 " + viewbox[0] + " " + viewbox[1] : "")
-        use(fill=color, xlink:href='#' + name)
+    const domain = 'lord.salex.pro'
 
 //- Components
-//- include components/_menu
+include components/_icons
+include components/_menu
+include components/_social
 
 doctype html
 html(lang="ru")
@@ -19,9 +16,10 @@ html(lang="ru")
         main.off-canvas-content.wrap(data-off-canvas-content)
             include sections/_header
             block content
-                include sections/_footer
+            include sections/_footer
             //- include components/_popup
         //- include components/_offcanvas
+        if page != 'contact'
+            +social(socials)(class="vertical")
         block js
             script(src="./js/app.min.js")
-        //- include components/_icons

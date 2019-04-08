@@ -1,0 +1,19 @@
+.social{
+    background-color: rgba($secondary-color, 0.5);
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    &.vertical{
+        li + li {
+            margin: 15px 0 0;
+        }
+    }
+    a{
+        color: $primary-color;
+        &:hover, &:focus{
+            color: darken($primary-color, 10%);
+        }
+    }
+}

@@ -1,13 +1,33 @@
-mixin menu(mod)
+mixin menu()
     -
         const menu = [
             {
-                title: 'title',
-                link: '#link'
+                title: 'home',
+                link: '/'
+            },
+            {
+                title: 'music',
+                link: 'music.html'
+            },
+            {
+                title: 'video',
+                link: 'video.html'
+            },
+            {
+                title: 'photo',
+                link: 'photo.html'
+            },
+            {
+                title: 'concert',
+                link: 'concert.html'
+            },
+            {
+                title: 'contact',
+                link: 'contact.html'
             }
         ]
-    ul.menu(class=mod)
+    ul.menu&attributes(attributes)
         each item in menu
-            li
+            li(class=(page==item.title) ? 'active' : '')
                 a(href=item.link)
                     =item.title

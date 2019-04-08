@@ -1,3 +1,10 @@
 .footer{
     margin-top: auto;
+    &_copy{
+        padding: 15px 0;
+        text-align: center;
+        color: rgba($white, 0.5);
+        font-size: 12px;
+        letter-spacing: 0.75px;
+    }
 }

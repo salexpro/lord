@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "Demo mode with Github Pages",
-		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\necho \"\\n\" >> docs/js/app.min.js\ncat docs/js/components/fastnav.min.js >> docs/js/app.min.js\nrm -f build.zip\nzip -r build.zip build/",
+		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\necho \"\\n\" >> docs/js/app.min.js\ncat docs/js/lib/fastnav.min.js >> docs/js/app.min.js\nrm -f build.zip\nzip -r build.zip build/",
 		"scriptType": 1,
 		"scriptUUIDString": "26AE3F7B-AC2D-4F34-BF67-57F311D0110B",
 		"stepType": 2,
@@ -86,6 +86,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/node_modules/svg4everybody/dist/svg4everybody.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/svg4everybody/dist/svg4everybody.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -129,21 +140,127 @@
 		"oAP": "/build/assets/favicon/.gitkeep",
 		"oF": 0
 		},
-	"/src/assets/fonts/.gitkeep": {
+	"/src/assets/fonts/AvenirNext/AvenirNextCyr-Medium.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/assets/fonts/.gitkeep",
+		"oAP": "/build/assets/fonts/AvenirNext/AvenirNextCyr-Medium.woff",
 		"oF": 0
 		},
-	"/src/assets/img/.gitkeep": {
+	"/src/assets/fonts/AvenirNext/AvenirNextCyr-Medium.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/assets/img/.gitkeep",
+		"oAP": "/build/assets/fonts/AvenirNext/AvenirNextCyr-Medium.woff2",
 		"oF": 0
+		},
+	"/src/assets/fonts/ProximaNova/ProximaNova-Regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/ProximaNova/ProximaNova-Regular.woff",
+		"oF": 0
+		},
+	"/src/assets/fonts/ProximaNova/ProximaNova-Regular.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/ProximaNova/ProximaNova-Regular.woff2",
+		"oF": 0
+		},
+	"/src/assets/fonts/ProximaNova/ProximaNova-Semibold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/ProximaNova/ProximaNova-Semibold.woff",
+		"oF": 0
+		},
+	"/src/assets/fonts/ProximaNova/ProximaNova-Semibold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/ProximaNova/ProximaNova-Semibold.woff2",
+		"oF": 0
+		},
+	"/src/assets/img/icons.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/icons.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103252935673,
+		"prP": 0
+		},
+	"/src/assets/img/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/logo.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/assets/img/logo_main.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/logo_main.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/assets/img/photos/main.jpg": {
+		"ft": 16384,
+		"iS": 82651,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/photos/main.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/photos/main@2x.jpg": {
+		"ft": 16384,
+		"iS": 216054,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/photos/main@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/photos/music.jpg": {
+		"ft": 16384,
+		"iS": 39959,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/photos/music.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/photos/music@2x.jpg": {
+		"ft": 16384,
+		"iS": 113616,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/photos/music@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"/src/CNAME": {
 		"cB": 0,
@@ -188,7 +305,7 @@
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/build/js/lib/foundation-explicit-pieces.min.js",
 		"oF": 0,
 		"sC": 3,
@@ -254,6 +371,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/components/_social.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_social.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/index.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -261,6 +388,16 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/pages/music.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/music.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -362,6 +499,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/components/_player.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_player.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/components/_popup.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -371,6 +521,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/scss/css/_popup.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/components/_social.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_social.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -400,6 +563,32 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"/src/scss/sections/_main.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_main.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_music.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_music.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		}
 	},
 "hooks": [
@@ -412,7 +601,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ariel",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 548730532
+	"lastBuiltDate": 576453325.61108005
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

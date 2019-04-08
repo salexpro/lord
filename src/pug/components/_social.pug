@@ -1,0 +1,26 @@
+-
+    const socials = [
+        {
+            name: 'apple',
+            link: '#'
+        },
+        {
+            name: 'instagram',
+            link: '#'
+        },
+        {
+            name: 'facebook',
+            link: '#'
+        },
+        {
+            name: 'vk',
+            link: '#'
+        },
+    ]
+
+mixin social(data)
+    ul.menu.simple.social&attributes(attributes)
+        each item in data
+            li
+                a(href=item.link target="_blank")
+                    +icon(item.name, [20, 20], '#fecc74')
