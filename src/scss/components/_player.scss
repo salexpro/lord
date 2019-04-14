@@ -5,14 +5,20 @@
     height: 70px;
     background: $secondary-color;
     padding: 0 90px;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     transition: 300ms;
+    z-index: 5;
     &.is_hidden{
         opacity: 0;
         visibility: hidden;
+    }
+    &:not(.is_hidden){
+        + .footer{
+            height: 70px;
+        }
     }
     &_cover{
         width: 70px;
@@ -49,6 +55,8 @@
                 height: 36px;
                 background: url(../assets/img/wave.svg);
                 background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position: left center;
                 &_played{
                     position: absolute;
                     top: 0;
@@ -57,7 +65,8 @@
                     width: 0;
                     background: url(../assets/img/wave_played.svg);
                     background-size: auto 100%;
-                    // transition: 200ms linear;
+                    background-repeat: no-repeat;
+                    background-position: left center;
                 }
             }
         }
@@ -96,15 +105,23 @@
         text-align: center;
         box-sizing: content-box;
 
-        &,
-        &::before,
-        &::after {
+        &:active,
+        &:focus{
+            span{
+                position:relative;
+                top: 0;
+                left: 0;
+            }  
+        }
+        span,
+        span::before,
+        span::after {
             content: '';
             display: inline-block;
             vertical-align: middle;
             transition: $duration;
         }
-        &::before {
+        span::before {
             margin-left: $size/6;
             border-left: $size*$sin/2 solid $black;
             border-top: $border solid transparent;
@@ -112,7 +129,7 @@
             border-right: 0px solid transparent;
             height: $size - 2*$border;
         }
-        &::after {
+        span::after {
             margin: 0;
             border-left: $size*$sin/2.1 solid $black;
             border-top: $border solid transparent;
@@ -120,7 +137,7 @@
             height: 0px;
             transform: translateX(-.5%);
         }
-        &.is_playing {
+        &.is_playing span {
             &::before,
             &::after {
                 margin: 0;

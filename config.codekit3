@@ -344,8 +344,8 @@
 	"/src/js/app.js": {
 		"bF": 4,
 		"ft": 64,
-		"ma": 0,
-		"mi": 0,
+		"ma": 1,
+		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/app.min.js",
 		"oF": 0,
@@ -730,7 +730,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ariel",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 576895922.82290602
+	"lastBuiltDate": 576910433.06251895
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

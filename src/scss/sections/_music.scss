@@ -19,6 +19,7 @@
         cursor: pointer;
         position: relative;
         box-shadow: 0 9px 36px rgba($black, 0.2);
+        width: calc(50% - 13px);
         &:nth-child(even){
             margin-left: 26px;
         }

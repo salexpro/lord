@@ -111,7 +111,7 @@ class Player {
                 if (buffered.length) {
                     const loaded = 100 * buffered.end(0) / player.audio.duration;
                     this.playerLoaded.style.width = `${loaded}%`;
-                    if (loaded == 100) {
+                    if (loaded >= 99.99) {
                         clearInterval(progressChecker);
                         playerWaves.classList.add('is_loaded');
                         this.playerLoaded.style.width = 0;
@@ -164,7 +164,7 @@ player.listen('pause', () => {
 })
 player.listen('finish', () => {
     playButton.classList.remove('is_playing');
-    document.querySelectorAll('.music_song').forEach(el => el.classList.remove('is_playing'));
+    Array.from(document.querySelectorAll('.music_song')).forEach(el => el.classList.remove('is_playing'));
 })
 
 player.listen('audioprocess', () => {
@@ -193,7 +193,7 @@ const songs = document.querySelector('#songs');
 if (songs) {
     songs.addEventListener('click', e => {
         if (e.target.className === 'music_song_play') {
-            const currSong = e.target.closest('.music_song');
+            const currSong = e.target.parentNode.parentNode;
 
             playerCover.setAttribute('src', currSong.getAttribute('data-cover'));
             playerCover.setAttribute('alt', currSong.getAttribute('data-songname'));
@@ -205,7 +205,7 @@ if (songs) {
             player.load(currSong.getAttribute('data-preview'));
             player.setSongId(currSong.getAttribute('data-songid'));
 
-            document.querySelectorAll('.music_song').forEach(el => el.classList.remove('is_playing'));
+            Array.from(document.querySelectorAll('.music_song')).forEach(el => el.classList.remove('is_playing'));
             document.querySelector(`[data-songid="${player.getSongId()}"]`).classList.add('is_playing');
         }
     })

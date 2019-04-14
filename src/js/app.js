@@ -10,7 +10,7 @@ svg4everybody();
 
 (async () => {
     let music = new Music('https://itunes.apple.com/lookup');
-    const artistId = 329938300;
+    const artistId = 30865945;
     
     try {
         const albums = await music.getAlbums(artistId);

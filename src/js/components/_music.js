@@ -6,7 +6,7 @@ class Music {
     }
     async getAlbums(artistId) {
         try {
-            let response = await fetch(`${this.url}?entity=album&sort=recent&limit=6&id=${artistId}`);
+            let response = await fetch(`${this.url}?entity=album&limit=6&id=${artistId}`);
             let data = await response.json();
             return data;
         } catch (err) {
