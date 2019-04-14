@@ -1,0 +1,140 @@
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: $secondary-color;
+    padding: 0 90px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: 300ms;
+    &.is_hidden{
+        opacity: 0;
+        visibility: hidden;
+    }
+    &_cover{
+        width: 70px;
+        height: 70px;
+        margin-top: -15px;
+        align-self: flex-start;
+    }
+    &_track{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 600px;
+        width: 100%;
+        font-size: 12px;
+    }
+    &_waves{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 15px;
+        position: relative;
+        z-index: 1;
+        &.is_loaded{
+            .player_progress{
+                display: none;
+            }
+            &.is_native .player_waveform{
+                display: block;
+            }
+        }
+        &.is_native{
+            .player_waveform{
+                display: none;
+                position: relative;
+                height: 36px;
+                background: url(../assets/img/wave.svg);
+                background-size: auto 100%;
+                &_played{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0;
+                    background: url(../assets/img/wave_played.svg);
+                    background-size: auto 100%;
+                    // transition: 200ms linear;
+                }
+            }
+        }
+    }
+    &_progress{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+        background: rgba(255,255,255, 0.2);
+        &_loaded{
+            width: 0%;
+            height: 100%;
+            background: $primary-color;
+            transition: 300ms;
+        }
+    }
+    &_button{
+        // width: 70px;
+        // height: 70px;
+        background-color: $primary-color;
+        margin-top: -15px;
+        align-self: flex-start;
+
+
+        $duration: 250ms;
+        $sin: 0.866;
+        $size: 12px;
+        $border: $size/4;
+        // padding: $size*0.45;
+        width: 70px;
+        height: 70px;
+        font-size: 0;
+        white-space: nowrap;
+        text-align: center;
+        box-sizing: content-box;
+
+        &,
+        &::before,
+        &::after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            transition: $duration;
+        }
+        &::before {
+            margin-left: $size/6;
+            border-left: $size*$sin/2 solid $black;
+            border-top: $border solid transparent;
+            border-bottom: $border solid transparent;
+            border-right: 0px solid transparent;
+            height: $size - 2*$border;
+        }
+        &::after {
+            margin: 0;
+            border-left: $size*$sin/2.1 solid $black;
+            border-top: $border solid transparent;
+            border-bottom: $border solid transparent;
+            height: 0px;
+            transform: translateX(-.5%);
+        }
+        &.is_playing {
+            &::before,
+            &::after {
+                margin: 0;
+                border-left: 2px solid $black;
+                border-top: 0 solid transparent;
+                border-bottom: 0 solid transparent;
+                height: $size;
+            }
+            &::before {
+                border-right: $size*0.3 solid transparent;
+            }
+        }
+    }
+    &_audio{
+        display: none;
+    }
+}

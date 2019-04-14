@@ -19,11 +19,16 @@
   "dependencies": {
     "foundation-sites": "^6.5.3",
     "jquery": "^3.3.1",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "wavesurfer.js": "^2.2.1",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-regenerator": "^7.4.3",
+    "@babel/polyfill": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
+    "babel-eslint": "^10.0.1",
     "browserslist": "^4.5.4",
     "eslint": "^4.19.1",
     "eslint-plugin-jquery": "^1.5.0"

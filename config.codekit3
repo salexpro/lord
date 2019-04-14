@@ -75,6 +75,17 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
+	"/node_modules/@babel/polyfill/lib/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/@babel/polyfill/lib/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/node_modules/jquery/dist/jquery.js": {
 		"bF": 0,
 		"ft": 64,
@@ -93,6 +104,28 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/build/node_modules/svg4everybody/dist/svg4everybody.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/wavesurfer.js/dist/wavesurfer.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/wavesurfer.js/dist/wavesurfer.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/whatwg-fetch/./fetch.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/whatwg-fetch/./fetch.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -198,6 +231,16 @@
 		"plM": 1103252935673,
 		"prP": 0
 		},
+	"/src/assets/img/loader.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/loader.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
 	"/src/assets/img/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -262,6 +305,26 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/src/assets/img/wave.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/wave.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/assets/img/wave_played.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/wave_played.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
 	"/src/CNAME": {
 		"cB": 0,
 		"ft": 8192,
@@ -281,10 +344,43 @@
 	"/src/js/app.js": {
 		"bF": 4,
 		"ft": 64,
-		"ma": 1,
-		"mi": 1,
+		"ma": 0,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/build/js/app.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_music.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/js/components/_music.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_player.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/js/components/_player.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_tabs.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/js/components/_tabs.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -361,6 +457,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/components/_player.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_player.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/components/_popup.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -418,6 +524,16 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_header.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_music.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_music.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -538,6 +654,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/components/_tabs.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_tabs.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -601,7 +730,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ariel",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 576453325.61108005
+	"lastBuiltDate": 576895832.94151998
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -842,7 +971,7 @@
 	"bowerSaveDevDependencies": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead, IE >= 9",
+	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 1,
 	"buildFolderName": "build",
 	"cleanBuild": 1,

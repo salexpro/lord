@@ -2,5 +2,118 @@
     &_photo{
         align-self: center;
         z-index: -1;
+        user-select: none;
+    }
+    &_player{
+        padding-top: 5px;
+    }
+    &_albums{
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+    }
+    &_album{
+        flex: 0 0 calc(50% - 13px);
+        max-width: 180px;
+        margin-bottom: 26px;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 9px 36px rgba($black, 0.2);
+        &:nth-child(even){
+            margin-left: 26px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black, 0.2);
+            transition: 300ms;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &:hover{
+            &:after{
+                opacity: 0;
+            }
+        }
+        &.is_loading{
+            &::after{
+                opacity: 0.7;
+                background-color: transparent;
+                background-image: url(../assets/img/loader.svg);
+            }
+        }
+    }
+    &_song{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 20px;
+        margin-left: 9px;
+        max-width: 400px;
+        background-color: rgba($secondary-color, 0.2);
+        & + &{
+            margin-top: 45px;
+        }
+        &.is_playing .music_song{
+            &_cover::after{
+                background-color: transparent;
+                box-shadow: inset 0 0 0 1px $primary-color;
+            }
+            &_play{
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &_cover{
+            margin: -21px 0 -21px -29px;
+            width: 78px;
+            height: 78px;
+            position: relative;
+            box-shadow: 0 2px 24px rgba($black, 0.5);
+            flex: 0 0 78px;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($secondary-color, 0.4);
+                transition: 300ms;
+            }
+        }
+        &_play{
+            @include css-triangle(13.5px, $primary-color, right);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-left-width: 21px;
+            z-index: 2;
+            transition: 300ms;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 78px;
+                height: 78px;
+                top: 50%;
+                left: calc(50% - 10.5px);
+                transform: translate(-50%, -50%);
+            }
+        }
+        &_info{
+            font-size: 12px;
+            margin-right: auto;
+            margin-left: 15px;
+            font-family: 'Proxima Nova', Helvetica, Roboto, Arial, sans-serif;
+        }
+        &_artist{
+            color: rgba($white, 0.4);
+            margin-top: 2px;
+        }
     }
 }

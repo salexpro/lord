@@ -1,0 +1,31 @@
+mixin song(is_play)
+    .music_song
+        .music_song_cover(class=is_play ? 'is_playing' : '')
+            img(src=`https://picsum.photos/156/156?${Math.random()}`, alt="Россия")
+            button.music_song_play(id="song_id")
+        .music_song_info
+            .music_song_title
+                | Россия
+            .music_song_artist
+                | LORD
+        a.button.secondary(href="#" target="_blank")
+            | iTunes
+
+section.grid-container.container.music
+    .grid-x.grid-margin-x.large-up-2.container_inner
+        .cell.music_photo
+            img(src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord")
+        .cell.music_player
+            ul#music.tabs(data-tabs)
+                li.tabs-title
+                    a(href='#albums', aria-selected='true') Альбомы
+                | 
+                | /
+                | 
+                li.tabs-title
+                    a(href='#songs') Песни
+            .tabs-content(data-tabs-content='music')
+                #albums.tabs-panel.is_active
+                    | Загрузка...
+                #songs.tabs-panel
+                    | Загрузка...

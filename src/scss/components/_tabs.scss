@@ -1,0 +1,38 @@
+.tabs{
+    font-family: 'Proxima Nova', Helvetica, Roboto, Arial, sans-serif;
+    word-spacing: 10px;
+    &-title{
+        display: inline-block;
+        float: none;
+        a{
+            outline: none;
+        }
+    }
+    &-content{
+        position: relative;
+        min-height: 617px;
+        overflow: hidden;
+    }
+    &-panel{
+        margin-top: 50px;
+        transition: 300ms;
+        opacity: 0;
+        visibility: hidden;
+        display: block;
+        &.is_active{
+            opacity: 1;
+            visibility: visible;
+        }
+        &#albums{
+            margin-top: 25px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+        &#songs{
+            padding: 9px 0;
+        }
+    }
+}
