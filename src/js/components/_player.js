@@ -1,6 +1,5 @@
 import WaveSurfer from 'wavesurfer.js';
 
-
 class Player {
     constructor(options) {
         this.audio = this.isWebAudio() ? WaveSurfer.create(options) : new Audio();

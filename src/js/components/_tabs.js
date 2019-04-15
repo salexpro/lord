@@ -5,12 +5,9 @@ const switchTab = activeTab => {
     activeTab.setAttribute('aria-selected', 'true');
 }
 
-const tabs = document.querySelector('.tabs');
-if (tabs) {
-    tabs.addEventListener('click', e => {
-        e.preventDefault();
-        if (e.target.nodeName === 'A') switchTab(e.target);
-    })
-}
+document.querySelector('.tabs').addEventListener('click', e => {
+    e.preventDefault();
+    if (e.target.nodeName === 'A') switchTab(e.target);
+})
 
 export { switchTab };

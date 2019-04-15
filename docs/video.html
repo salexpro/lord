@@ -2,14 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Music - Lord</title>
+    <title>Video - Lord</title>
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=no">
-    <meta property="og:title" content="Music - Lord">
+    <meta property="og:title" content="Video - Lord">
     <meta property="og:description" content="Description">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://lord.salex.pro/assets/favicon/apple-touch-icon.png">
@@ -20,53 +20,43 @@
     <link rel="apple-touch-startup-image" href="/assets/splash/launch-1536x2048.png?ckcachebust=576994466" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="/assets/splash/launch-1668x2224.png?ckcachebust=576994466" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="/assets/splash/launch-2048x2732.png?ckcachebust=576994466" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="stylesheet" href="./css/app.css?ckcachebust=07bbc5e382fdeceb9e6d5c146a48c5a2">
+    <link rel="stylesheet" href="./css/app.css?ckcachebust=e90e86e25b3af1001a9c9ce1cc9a95d3">
   </head>
   <body>
     <main class="off-canvas-content wrap" data-off-canvas-content>
       <header class="grid-container header"><a class="header_logo" href="/"><img src="./assets/img/logo.svg" alt="Lord"></a>
         <ul class="menu header_menu">
           <li><a href="/">home</a></li>
-          <li class="active"><a href="music.html">music</a></li>
-          <li><a href="video.html">video</a></li>
+          <li><a href="music.html">music</a></li>
+          <li class="active"><a href="video.html">video</a></li>
           <li><a href="photo.html">photo</a></li>
           <li><a href="concert.html">concert</a></li>
           <li><a href="contact.html">contact</a></li>
         </ul>
       </header>
-      <section class="grid-container container music">
-        <div class="grid-x grid-margin-x large-up-2 container_inner">
-          <div class="cell music_photo"><img src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord"></div>
-          <div class="cell music_player">
-            <ul class="tabs" id="music" data-tabs>
-              <li class="tabs-title"><a href="#albums" aria-selected="true">Альбомы</a></li> 
-              /
-               
-              <li class="tabs-title"><a href="#songs">Песни</a></li>
-            </ul>
-            <div class="tabs-content" data-tabs-content="music">
-              <div class="tabs-panel is_active" id="albums">Загрузка...</div>
-              <div class="tabs-panel" id="songs">Загрузка...</div>
+      <section class="grid-container container video">
+        <div class="grid-x grid-margin-x">
+          <div class="cell large-8">
+            <div class="video_item">
+              <div class="responsive-embed video_player" data-id="UCdMwyIy3ks">
+                <div class="video_player_container" id="videoPlayer"></div>
+                <div class="video_player_img"><img src="https://img.youtube.com/vi/UCdMwyIy3ks/maxresdefault.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="cell large-4 video_container--small">
+            <div class="responsive-embed video_item video_item--small" data-id="kIZhyifo6Q4"><img src="https://img.youtube.com/vi/kIZhyifo6Q4/maxresdefault.jpg" alt=""></div>
+            <div class="responsive-embed video_item video_item--soon"><span>Скоро</span></div>
+          </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+          <div class="cell large-12">
+            <div class="video_item video_item--soon">
+              <p>Сейчас мы работаем над съемками нового клипа</p>
             </div>
           </div>
         </div>
       </section>
-      <div class="player is_hidden">
-        <div class="player_cover"><img id="playerCover"></div>
-        <div class="player_track">
-          <div class="player_track_time" id="playerStartTime">00:00</div>
-          <div class="player_waves">
-            <div class="player_waveform" id="waveform">
-              <div class="player_waveform_played" id="playerPlayed"><img src="./assets/img/wave_played.svg" style="display:none"></div>
-            </div>
-            <div class="player_progress">
-              <div class="player_progress_loaded" id="playerLoaded"></div>
-            </div>
-          </div>
-          <div class="player_track_time" id="playerEndTime">00:00</div>
-        </div>
-        <button class="player_button" id="playerButton"><span></span></button>
-      </div>
       <footer class="grid-container footer">
         <p class="footer_copy">© 2019. Официальный сайт.</p>
       </footer>
@@ -89,7 +79,9 @@
             <use fill="currentColor" xlink:href="./assets/img/icons.svg#vk"></use>
           </svg></a></li>
     </ul>
-    <script src="./js/app.min.js?ckcachebust=1faf6053159c06f422912c548bf45717"></script>
-    <script src="./js/svg4everybody.min.js?ckcachebust=34542179dd3029531d3700e0f8ed2e0f"></script>
+    <script src="https://www.youtube.com/iframe_api?ckcachebust=576994466"></script>
+    <script src="./js/video.min.js?ckcachebust=95e1d9db30a56e090c8516b53d36aa6b"></script>
+    <script>function onYouTubeIframeAPIReady() {video.ytready()}</script>
+    <script src="./js/svg4everybody.min.js?ckcachebust=5d510b5585c56a00a7703fe1bd187573"></script>
   </body>
 </html>

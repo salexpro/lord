@@ -15,11 +15,11 @@
         opacity: 0;
         visibility: hidden;
     }
-    &:not(.is_hidden){
-        + .footer{
-            height: 70px;
-        }
-    }
+    // &:not(.is_hidden){
+    //     + .footer .footer_copy{
+    //         padding: 25px 0;
+    //     }
+    // }
     &_cover{
         width: 70px;
         height: 70px;

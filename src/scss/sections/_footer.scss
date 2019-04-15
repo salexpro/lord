@@ -1,7 +1,8 @@
 .footer{
     margin-top: auto;
     &_copy{
-        padding: 15px 0;
+        transition: 300ms;
+        padding: 20px 0 35px;
         text-align: center;
         color: rgba($white, 0.5);
         font-size: 12px;
