@@ -1,0 +1,54 @@
+extends ../_layout
+
+block const
+    - const page = 'concert'
+    - const name = 'Concert'
+
+
+block content
+    -
+        const concerts = [
+            {
+                city: 'Москва',
+                date: '06-25',
+                link: '#'
+            },
+            {
+                city: 'Санкт-Петербург',
+                date: '06-28',
+                link: '#'
+            },
+            {
+                city: 'Тула',
+                date: '06-30',
+                link: '#'
+            },
+            {
+                city: 'Екатеринбург',
+                date: '07-02',
+                link: '#'
+            },
+        ]
+
+    mixin concert(data)
+        .concert_tour
+            .concert_tour_info
+                p.concert_tour_city
+                    =data.city
+                time.concert_tour_date(datetime=data.date)
+                    =`${data.date.substr(3,2)}.${data.date.substr(0,2)}`
+            a.button.secondary(href=data.link target="_blank")
+                | Билеты
+    
+    section.grid-container.container.concert
+        .grid-x.grid-margin-x.container_inner
+            .cell.large-7.music_photo
+                img(src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord")
+            .cell.large-5
+                h1.concert_header
+                    | Ближайшие туры
+                .concert_tours
+                    each concert in concerts
+                        +concert(concert)
+                        
+block js

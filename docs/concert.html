@@ -2,14 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Music - Lord</title>
+    <title>Concert - Lord</title>
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=no">
-    <meta property="og:title" content="Music - Lord">
+    <meta property="og:title" content="Concert - Lord">
     <meta property="og:description" content="Description">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://lord.salex.pro/assets/favicon/apple-touch-icon.png">
@@ -20,53 +20,62 @@
     <link rel="apple-touch-startup-image" href="/assets/splash/launch-1536x2048.png?ckcachebust=577409147" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="/assets/splash/launch-1668x2224.png?ckcachebust=577409147" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="/assets/splash/launch-2048x2732.png?ckcachebust=577409147" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="stylesheet" href="./css/app.css?ckcachebust=ece98c09289c957674e6a10bb056038d">
+    <link rel="stylesheet" href="./css/app.css?ckcachebust=b466b58d542afdfd6552aa76de8662bb">
   </head>
   <body>
     <main class="off-canvas-content wrap" data-off-canvas-content>
       <header class="grid-container header"><a class="header_logo" href="/"><img src="./assets/img/logo.svg" alt="Lord"></a>
         <ul class="menu header_menu">
           <li><a href="/">home</a></li>
-          <li class="active"><a href="music.html">music</a></li>
+          <li><a href="music.html">music</a></li>
           <li><a href="video.html">video</a></li>
           <li><a href="photo.html">photo</a></li>
-          <li><a href="concert.html">concert</a></li>
+          <li class="active"><a href="concert.html">concert</a></li>
           <li><a href="contact.html">contact</a></li>
         </ul>
       </header>
-      <section class="grid-container container music">
-        <div class="grid-x grid-margin-x large-up-2 container_inner">
-          <div class="cell music_photo"><img src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord"></div>
-          <div class="cell music_player">
-            <ul class="tabs" id="music" data-tabs>
-              <li class="tabs-title"><a href="#albums" aria-selected="true">Альбомы</a></li> 
-              /
-               
-              <li class="tabs-title"><a href="#songs">Песни</a></li>
-            </ul>
-            <div class="tabs-content" data-tabs-content="music">
-              <div class="tabs-panel is_active" id="albums">Загрузка...</div>
-              <div class="tabs-panel" id="songs">Загрузка...</div>
+      <section class="grid-container container concert">
+        <div class="grid-x grid-margin-x container_inner">
+          <div class="cell large-7 music_photo"><img src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord"></div>
+          <div class="cell large-5">
+            <h1 class="concert_header">Ближайшие туры</h1>
+            <div class="concert_tours">
+                    <div class="concert_tour">
+                      <div class="concert_tour_info">
+                        <p class="concert_tour_city">Москва
+                        </p>
+                        <time class="concert_tour_date" datetime="06-25">25.06
+                        </time>
+                      </div><a class="button secondary" href="#" target="_blank">Билеты</a>
+                    </div>
+                    <div class="concert_tour">
+                      <div class="concert_tour_info">
+                        <p class="concert_tour_city">Санкт-Петербург
+                        </p>
+                        <time class="concert_tour_date" datetime="06-28">28.06
+                        </time>
+                      </div><a class="button secondary" href="#" target="_blank">Билеты</a>
+                    </div>
+                    <div class="concert_tour">
+                      <div class="concert_tour_info">
+                        <p class="concert_tour_city">Тула
+                        </p>
+                        <time class="concert_tour_date" datetime="06-30">30.06
+                        </time>
+                      </div><a class="button secondary" href="#" target="_blank">Билеты</a>
+                    </div>
+                    <div class="concert_tour">
+                      <div class="concert_tour_info">
+                        <p class="concert_tour_city">Екатеринбург
+                        </p>
+                        <time class="concert_tour_date" datetime="07-02">02.07
+                        </time>
+                      </div><a class="button secondary" href="#" target="_blank">Билеты</a>
+                    </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="player is_hidden">
-        <div class="player_cover"><img id="playerCover"></div>
-        <div class="player_track">
-          <div class="player_track_time" id="playerStartTime">00:00</div>
-          <div class="player_waves">
-            <div class="player_waveform" id="waveform">
-              <div class="player_waveform_played" id="playerPlayed"><img src="./assets/img/wave_played.svg" style="display:none"></div>
-            </div>
-            <div class="player_progress">
-              <div class="player_progress_loaded" id="playerLoaded"></div>
-            </div>
-          </div>
-          <div class="player_track_time" id="playerEndTime">00:00</div>
-        </div>
-        <button class="player_button" id="playerButton"><span></span></button>
-      </div>
       <footer class="grid-container footer">
         <p class="footer_copy">© 2019. Официальный сайт.</p>
       </footer>
@@ -89,7 +98,6 @@
             <use fill="currentColor" xlink:href="./assets/img/icons.svg#vk"></use>
           </svg></a></li>
     </ul>
-    <script src="./js/app.min.js?ckcachebust=9d9efc09f6697274e7b5bf2c172190b8"></script>
-    <script src="./js/svg4everybody.min.js?ckcachebust=09dd6bfc10c7202135955f97769b058e"></script>
+    <script src="./js/svg4everybody.min.js?ckcachebust=81b47c69a4cd297cb9385695945b82e7"></script>
   </body>
 </html>

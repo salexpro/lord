@@ -1,0 +1,28 @@
+.concert{
+    &_header{
+        font-size: 14px;
+    }
+    &_tours{
+        margin-top: 25px;
+    }
+    &_tour{
+        max-width: 400px;
+        background-color: rgba($secondary-color, 0.2);
+        padding: 14px 20px 16px 17px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Proxima Nova', Helvetica, Roboto, Arial, sans-serif;
+        & + &{
+            margin-top: 25px;
+        }
+        &_city{
+            color: $primary-color;
+            margin-bottom: 5px;
+        }
+        &_date{
+            font-size: 12px;
+            color: rgba($white, 0.4);
+        }
+    }
+}

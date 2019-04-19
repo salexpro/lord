@@ -17,6 +17,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        transition: 300ms;
         &::before, &::after{
             content: '';
             transition: 300ms;
@@ -38,6 +39,7 @@
                 right: 9px;
             }
             &:hover{
+                transform: translate(-30%, -50%);
                 &::before{
                     border-color: transparent #1a1b1d transparent transparent;
                 }
@@ -58,6 +60,7 @@
                 left: 9px;
             }
             &:hover{
+                transform: translate(30%, -50%);
                 &::before{
                     border-color: transparent transparent transparent #1a1b1d;
                 }
