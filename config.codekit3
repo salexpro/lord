@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "Demo mode with Github Pages",
-		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\necho \"\" >> docs/js/app.min.js\ncat docs/js/lib/fastnav.min.js >> docs/js/app.min.js\nrm -f build.zip\nzip -r build.zip build/",
+		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\necho \"\" >> docs/js/svg4everybody.min.js\ncat docs/js/lib/fastnav.min.js >> docs/js/svg4everybody.min.js\nrm -f build.zip\nzip -r build.zip build/",
 		"scriptType": 1,
 		"scriptUUIDString": "26AE3F7B-AC2D-4F34-BF67-57F311D0110B",
 		"stepType": 2,
@@ -49,12 +49,6 @@
 		"oAP": "/build/.gitignore",
 		"oF": 1
 		},
-	"/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/build",
-		"oF": 0
-		},
 	"/build.zip": {
 		"cB": 0,
 		"ft": 8192,
@@ -85,6 +79,43 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"/node_modules/@glidejs/glide/dist/glide.esm.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/@glidejs/glide/dist/glide.esm.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/@glidejs/glide/src/assets/sass/_variables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/@glidejs/glide/src/assets/css/_variables.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/@glidejs/glide/src/assets/sass/glide.core.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/@glidejs/glide/src/assets/css/glide.core.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		},
 	"/node_modules/jquery/dist/jquery.js": {
 		"bF": 0,
@@ -250,6 +281,72 @@
 		"plM": 1103269715967,
 		"prP": 0
 		},
+	"/src/assets/img/photos/carousel/1@2x.jpg": {
+		"ft": 16384,
+		"iS": 57578,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/photos/carousel/1@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/photos/carousel/1@2x.png": {
+		"ft": 32768,
+		"iS": 424233,
+		"oA": 0,
+		"oAP": "/build/assets/img/photos/carousel/1@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/photos/carousel/2@2x.jpg": {
+		"ft": 16384,
+		"iS": 69976,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/photos/carousel/2@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/photos/carousel/2@2x.png": {
+		"ft": 32768,
+		"iS": 764305,
+		"oA": 0,
+		"oAP": "/build/assets/img/photos/carousel/2@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/photos/carousel/3@2x.jpg": {
+		"ft": 16384,
+		"iS": 45166,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/photos/carousel/3@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/photos/carousel/3@2x.png": {
+		"ft": 32768,
+		"iS": 356553,
+		"oA": 0,
+		"oAP": "/build/assets/img/photos/carousel/3@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/photos/main.jpg": {
 		"ft": 16384,
 		"iS": 82651,
@@ -377,7 +474,7 @@
 	"/src/js/lib/fastnav.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/lib/fastnav.min.js",
@@ -392,6 +489,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/lib/foundation-explicit-pieces.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/photo.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/build/js/photo.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -411,7 +519,7 @@
 		"bF": 4,
 		"ft": 64,
 		"ma": 1,
-		"mi": 0,
+		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/video.min.js",
 		"oF": 0,
@@ -518,6 +626,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/photo.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/photo.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/video.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -619,6 +737,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/scss/css/_fonts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/components/_glide.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_glide.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -740,6 +871,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/sections/_photo.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_photo.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_video.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -764,7 +908,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ariel",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 576994466.71320403
+	"lastBuiltDate": 577384174.01269901
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

@@ -2,14 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Music - Lord</title>
+    <title>Photo - Lord</title>
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=no">
-    <meta property="og:title" content="Music - Lord">
+    <meta property="og:title" content="Photo - Lord">
     <meta property="og:description" content="Description">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://lord.salex.pro/assets/favicon/apple-touch-icon.png">
@@ -20,53 +20,35 @@
     <link rel="apple-touch-startup-image" href="/assets/splash/launch-1536x2048.png?ckcachebust=577384173" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="/assets/splash/launch-1668x2224.png?ckcachebust=577384173" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="/assets/splash/launch-2048x2732.png?ckcachebust=577384173" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="stylesheet" href="./css/app.css?ckcachebust=d5f0275c2d60dea67d21dd68c05ace79">
+    <link rel="stylesheet" href="./css/app.css?ckcachebust=b78f1d6d40d296b7af7ecaf3383be5e6">
   </head>
   <body>
     <main class="off-canvas-content wrap" data-off-canvas-content>
       <header class="grid-container header"><a class="header_logo" href="/"><img src="./assets/img/logo.svg" alt="Lord"></a>
         <ul class="menu header_menu">
           <li><a href="/">home</a></li>
-          <li class="active"><a href="music.html">music</a></li>
+          <li><a href="music.html">music</a></li>
           <li><a href="video.html">video</a></li>
-          <li><a href="photo.html">photo</a></li>
+          <li class="active"><a href="photo.html">photo</a></li>
           <li><a href="concert.html">concert</a></li>
           <li><a href="contact.html">contact</a></li>
         </ul>
       </header>
-      <section class="grid-container container music">
-        <div class="grid-x grid-margin-x large-up-2 container_inner">
-          <div class="cell music_photo"><img src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord"></div>
-          <div class="cell music_player">
-            <ul class="tabs" id="music" data-tabs>
-              <li class="tabs-title"><a href="#albums" aria-selected="true">Альбомы</a></li> 
-              /
-               
-              <li class="tabs-title"><a href="#songs">Песни</a></li>
+      <section class="grid-container container photo">
+        <div class="glide photo_carousel">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><img src="./assets/img/photos/carousel/1@2x.jpg" alt="Lord"></li>
+              <li class="glide__slide"><img src="./assets/img/photos/carousel/2@2x.jpg" alt="Lord"></li>
+              <li class="glide__slide"><img src="./assets/img/photos/carousel/3@2x.jpg" alt="Lord"></li>
             </ul>
-            <div class="tabs-content" data-tabs-content="music">
-              <div class="tabs-panel is_active" id="albums">Загрузка...</div>
-              <div class="tabs-panel" id="songs">Загрузка...</div>
-            </div>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="&lt;"></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir="&gt;"></button>
           </div>
         </div>
       </section>
-      <div class="player is_hidden">
-        <div class="player_cover"><img id="playerCover"></div>
-        <div class="player_track">
-          <div class="player_track_time" id="playerStartTime">00:00</div>
-          <div class="player_waves">
-            <div class="player_waveform" id="waveform">
-              <div class="player_waveform_played" id="playerPlayed"><img src="./assets/img/wave_played.svg" style="display:none"></div>
-            </div>
-            <div class="player_progress">
-              <div class="player_progress_loaded" id="playerLoaded"></div>
-            </div>
-          </div>
-          <div class="player_track_time" id="playerEndTime">00:00</div>
-        </div>
-        <button class="player_button" id="playerButton"><span></span></button>
-      </div>
       <footer class="grid-container footer">
         <p class="footer_copy">© 2019. Официальный сайт.</p>
       </footer>
@@ -89,7 +71,7 @@
             <use fill="currentColor" xlink:href="./assets/img/icons.svg#vk"></use>
           </svg></a></li>
     </ul>
-    <script src="./js/app.min.js?ckcachebust=395195253a5df8081653cec0b66d4c17"></script>
-    <script src="./js/svg4everybody.min.js?ckcachebust=ff736162b33f599cc519eb50a3059185"></script>
+    <script src="./js/photo.min.js?ckcachebust=7b0dd3d9054235c3ca18c11b2522d9a6"></script>
+    <script src="./js/svg4everybody.min.js?ckcachebust=e21df7bd561a0b6deb7374b07c7a98db"></script>
   </body>
 </html>

@@ -62,10 +62,14 @@
 @import 'components/player';
 @import 'components/social';
 // @import 'components/offcanvas';
+@import '../../node_modules/@glidejs/glide/src/assets/sass/glide.core';
+@import 'components/glide';
+
 
 // Sections
 @import 'sections/header';
 @import 'sections/main';
 @import 'sections/music';
 @import 'sections/video';
+@import 'sections/photo';
 @import 'sections/footer';

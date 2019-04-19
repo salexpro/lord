@@ -1,0 +1,70 @@
+.glide{
+    &__slides{
+        margin: 0;
+    }
+    &__slide{
+        // box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2);
+        // background-color: rgba(183, 183, 183, 0.1);
+        background-color: #141414;
+        height: 520px;
+        transition: transform 300ms;
+        overflow: hidden;
+        &:not(.glide__slide--active){
+            transform: scale(0.9);
+        }
+    }
+    &__arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &::before, &::after{
+            content: '';
+            transition: 300ms;
+        }
+        &::after{
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        &--left{
+            left: -17px;
+            &::before{
+                @include css-triangle(18.5px, rgba(#1a1b1d, 0.9), left);
+                border-right-width: 27px;
+            }
+            &::after{
+                @include css-triangle(18.5px, rgba($primary-color, 0.5), left);
+                border-right-width: 27px;
+                right: 9px;
+            }
+            &:hover{
+                &::before{
+                    border-color: transparent #1a1b1d transparent transparent;
+                }
+                &::after{
+                    border-color: transparent $primary-color transparent transparent;
+                }
+            }
+        }
+        &--right{
+            right: -17px;
+            &::before{
+                @include css-triangle(18.5px, rgba(#1a1b1d, 0.9), right);
+                border-left-width: 27px;
+            }
+            &::after{
+                @include css-triangle(18.5px, rgba($primary-color, 0.5), right);
+                border-left-width: 27px;
+                left: 9px;
+            }
+            &:hover{
+                &::before{
+                    border-color: transparent transparent transparent #1a1b1d;
+                }
+                &::after{
+                    border-color: transparent transparent transparent $primary-color;
+                }
+            }
+        }
+    }
+}

@@ -21,4 +21,4 @@ const pageWidget = pages => {
     });
 }
 
-pageWidget(['index', 'music', 'video']);
+pageWidget(['index', 'music', 'video', 'photo']);

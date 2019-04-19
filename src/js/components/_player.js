@@ -188,24 +188,22 @@ playButton.addEventListener('click', () => {
     player.playPause()
 })
 
-const songs = document.querySelector('#songs');
-if (songs) {
-    songs.addEventListener('click', e => {
-        if (e.target.className === 'music_song_play') {
-            const currSong = e.target.parentNode.parentNode;
 
-            playerCover.setAttribute('src', currSong.getAttribute('data-cover'));
-            playerCover.setAttribute('alt', currSong.getAttribute('data-songname'));
-            playerContainer.classList.remove('is_hidden');
-            playButton.setAttribute('disabled', 'disabled');
-            playerWaves.classList.remove('is_loaded');
+document.querySelector('#songs').addEventListener('click', e => {
+    if (e.target.className === 'music_song_play') {
+        const currSong = e.target.parentNode.parentNode;
 
-            player.resetTime();
-            player.load(currSong.getAttribute('data-preview'));
-            player.setSongId(currSong.getAttribute('data-songid'));
+        playerCover.setAttribute('src', currSong.getAttribute('data-cover'));
+        playerCover.setAttribute('alt', currSong.getAttribute('data-songname'));
+        playerContainer.classList.remove('is_hidden');
+        playButton.setAttribute('disabled', 'disabled');
+        playerWaves.classList.remove('is_loaded');
 
-            Array.from(document.querySelectorAll('.music_song')).forEach(el => el.classList.remove('is_playing'));
-            document.querySelector(`[data-songid="${player.getSongId()}"]`).classList.add('is_playing');
-        }
-    })
-}
+        player.resetTime();
+        player.load(currSong.getAttribute('data-preview'));
+        player.setSongId(currSong.getAttribute('data-songid'));
+
+        Array.from(document.querySelectorAll('.music_song')).forEach(el => el.classList.remove('is_playing'));
+        document.querySelector(`[data-songid="${player.getSongId()}"]`).classList.add('is_playing');
+    }
+});
