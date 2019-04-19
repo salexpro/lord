@@ -18,9 +18,9 @@
         },
     ]
 
-mixin social(data)
+mixin social(data, size = 20)
     ul.menu.simple.social&attributes(attributes)
         each item in data
             li
                 a(href=item.link target="_blank")
-                    +icon(item.name, [20, 20], '#fecc74')
+                    +icon(item.name, [size, size], '#fecc74')

@@ -1,0 +1,17 @@
+.contact{
+    &_box{
+        padding: 26px 30px;
+        background-color: rgba($secondary-color, 0.2);
+        margin-top: 78px;
+        a{
+            color: $primary-color;
+            &:hover, &:focus{
+                color: darken($primary-color, 15%);
+            }
+        }
+    }
+    &_header{
+        color: rgba($white, 0.6);
+        margin-bottom: 8px;
+    }
+}

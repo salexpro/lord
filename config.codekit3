@@ -622,6 +622,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/contact.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/contact.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/index.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -848,6 +858,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/sections/_contact.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_contact.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -937,7 +960,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ariel",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 577409147.61516094
+	"lastBuiltDate": 577410400.48636496
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
