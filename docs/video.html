@@ -13,26 +13,29 @@
     <meta property="og:description" content="Description">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://lord.salex.pro/assets/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-640x1136.png?ckcachebust=577410399" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-750x1294.png?ckcachebust=577410399" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1242x2148.png?ckcachebust=577410399" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1125x2436.png?ckcachebust=577410399" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1536x2048.png?ckcachebust=577410399" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1668x2224.png?ckcachebust=577410399" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-2048x2732.png?ckcachebust=577410399" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="stylesheet" href="./css/app.css?ckcachebust=8040b5b77510818148885c2032643846">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-640x1136.png?ckcachebust=577486611" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-750x1294.png?ckcachebust=577486611" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1242x2148.png?ckcachebust=577486611" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1125x2436.png?ckcachebust=577486611" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1536x2048.png?ckcachebust=577486611" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1668x2224.png?ckcachebust=577486611" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-2048x2732.png?ckcachebust=577486611" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="stylesheet" href="./css/app.css?ckcachebust=778376411332cfa0b4a92c772f4ad644">
   </head>
   <body>
     <main class="off-canvas-content wrap" data-off-canvas-content>
-      <header class="grid-container header"><a class="header_logo" href="/"><img src="./assets/img/logo.svg" alt="Lord"></a>
-        <ul class="menu header_menu">
-          <li><a href="/">home</a></li>
-          <li><a href="music.html">music</a></li>
-          <li class="active"><a href="video.html">video</a></li>
-          <li><a href="photo.html">photo</a></li>
-          <li><a href="concert.html">concert</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
+      <header class="header">
+        <div class="grid-container header_inner"><a class="header_logo" href="/"><img src="./assets/img/logo.svg" alt="Lord"></a>
+          <ul class="menu header_menu">
+            <li><a href="/">home</a></li>
+            <li><a href="music.html">music</a></li>
+            <li class="active"><a href="video.html">video</a></li>
+            <li><a href="photo.html">photo</a></li>
+            <li><a href="concert.html">concert</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+          <button class="header_hamb" data-open="menu"></button>
+        </div>
       </header>
       <section class="grid-container container video">
         <div class="grid-x grid-margin-x">
@@ -57,31 +60,45 @@
           </div>
         </div>
       </section>
-      <footer class="grid-container footer">
-        <p class="footer_copy">© 2019. Официальный сайт.</p>
+      <ul class="menu simple social vertical">
+        <li><a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use fill="currentColor" xlink:href="./assets/img/icons.svg#apple"></use>
+            </svg></a></li>
+        <li><a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use fill="currentColor" xlink:href="./assets/img/icons.svg#instagram"></use>
+            </svg></a></li>
+        <li><a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use fill="currentColor" xlink:href="./assets/img/icons.svg#facebook"></use>
+            </svg></a></li>
+        <li><a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use fill="currentColor" xlink:href="./assets/img/icons.svg#vk"></use>
+            </svg></a></li>
+      </ul>
+      <footer class="footer">
+        <div class="grid-container">
+          <p class="footer_copy">© 2019. Официальный сайт.</p>
+        </div>
       </footer>
     </main>
-    <ul class="menu simple social vertical">
-      <li><a href="#" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-            <use fill="currentColor" xlink:href="./assets/img/icons.svg#apple"></use>
-          </svg></a></li>
-      <li><a href="#" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-            <use fill="currentColor" xlink:href="./assets/img/icons.svg#instagram"></use>
-          </svg></a></li>
-      <li><a href="#" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-            <use fill="currentColor" xlink:href="./assets/img/icons.svg#facebook"></use>
-          </svg></a></li>
-      <li><a href="#" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-            <use fill="currentColor" xlink:href="./assets/img/icons.svg#vk"></use>
-          </svg></a></li>
-    </ul>
-    <script src="https://www.youtube.com/iframe_api?ckcachebust=577410399"></script>
-    <script src="./js/video.min.js?ckcachebust=7a2571534c0a0f4086930f176ef1dc4f"></script>
+    <div class="off-canvas position-right header_menu_mobile" id="menu" aria-hidden="true">
+      <ul class="menu vertical menu--mobile">
+        <li><a href="/">home</a></li>
+        <li><a href="music.html">music</a></li>
+        <li class="active"><a href="video.html">video</a></li>
+        <li><a href="photo.html">photo</a></li>
+        <li><a href="concert.html">concert</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+      <button class="close-button" aria-label="Закрыть" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="js-off-canvas-overlay is-overlay-fixed is-closable"></div>
+    <script src="https://www.youtube.com/iframe_api?ckcachebust=577486611"></script>
+    <script src="./js/video.min.js?ckcachebust=f0844b15f49026e93c9b5e8cf04faeff"></script>
     <script>function onYouTubeIframeAPIReady() {video.ytready()}</script>
-    <script src="./js/svg4everybody.min.js?ckcachebust=75d505b39ede211e6430661e0fdd18b8"></script>
+    <script src="./js/app.min.js?ckcachebust=350c29b29081020d6bf13d00e743bc71"></script>
   </body>
 </html>

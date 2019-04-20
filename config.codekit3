@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "Demo mode with Github Pages",
-		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\necho \"\" >> docs/js/svg4everybody.min.js\ncat docs/js/lib/fastnav.min.js >> docs/js/svg4everybody.min.js\nrm -f build.zip\nzip -r build.zip build/",
+		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\necho \"\" >> docs/js/app.min.js\ncat docs/js/lib/fastnav.min.js >> docs/js/app.min.js\nrm -f build.zip\nzip -r build.zip build/",
 		"scriptType": 1,
 		"scriptUUIDString": "26AE3F7B-AC2D-4F34-BF67-57F311D0110B",
 		"stepType": 2,
@@ -130,6 +130,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/build/node_modules/jquery/dist/jquery.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/svg4everybody/dist/svg4everybody.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/svg4everybody/dist/svg4everybody.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -499,6 +510,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/src/js/music.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/build/js/music.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/src/js/photo.js": {
 		"bF": 4,
 		"ft": 64,
@@ -506,17 +528,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/photo.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
-	"/src/js/svg4everybody.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/svg4everybody.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -780,7 +791,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/components/_offcanvas.scss": {
+	"/src/scss/components/_menu.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -788,7 +799,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/scss/css/_offcanvas.css",
+		"oAP": "/build/scss/css/_menu.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -960,7 +971,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ariel",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 577410400.48636496
+	"lastBuiltDate": 577486612.24395204
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

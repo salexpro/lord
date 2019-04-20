@@ -1,4 +1,6 @@
-#menu.off-canvas.position-right.nav_mobile(data-off-canvas data-transition="overlap" data-auto-focus="false")
-    +menu('vertical')
+#menu.off-canvas.position-right.header_menu_mobile(aria-hidden="true")
+    +menu('vertical')(class="vertical menu--mobile")
     button.close-button(aria-label='Закрыть', type='button', data-close)
         span(aria-hidden='true') ×
+
+.js-off-canvas-overlay.is-overlay-fixed.is-closable

@@ -12,11 +12,27 @@
     }
     &_content{
         transform: translateY(calc(-50% - 47px));
+        @include breakpoint(small down){
+            transform: translateY(-50%);
+        }
+        img{
+            @include breakpoint(medium down){
+                min-width: 188px;
+            }
+            @include breakpoint(small down){
+                min-width: 92px;
+            }
+        }
     }
     &_header{
         position: relative;
         margin-top: 23px;
         padding-bottom: 23px;
+        white-space: nowrap;
+        @include breakpoint(small down){
+            padding-bottom: 20px;
+            margin-top: 28px;
+        }
         &::after{
             content: '';
             position: absolute;
@@ -24,11 +40,15 @@
             bottom: 0;
             width: 140px;
             border-bottom: 3px solid $primary-color;
+            @include breakpoint(small down){
+                width: 92px;
+            }
         }
     }
     &_photo{
         // align-self: flex-end;
         z-index: -1;
         user-select: none;
+        text-align: right;
     }
 }

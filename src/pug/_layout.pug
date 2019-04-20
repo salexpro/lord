@@ -16,11 +16,10 @@ html(lang="ru")
         main.off-canvas-content.wrap(data-off-canvas-content)
             include sections/_header
             block content
+            if page != 'contact'
+                +social(socials)(class="vertical")
             include sections/_footer
             //- include components/_popup
-        //- include components/_offcanvas
-        if page != 'contact'
-            +social(socials)(class="vertical")
+        include components/_offcanvas
         block js
-            script(src="./js/app.min.js")
-        script(src="./js/svg4everybody.min.js")
+        script(src="./js/app.min.js")

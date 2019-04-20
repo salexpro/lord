@@ -1,5 +1,9 @@
 .footer{
     margin-top: auto;
+    padding: 0 68px;
+    @include breakpoint(small down){
+        padding: 0 20px;
+    }
     &_copy{
         transition: 300ms;
         padding: 20px 0 35px;
@@ -7,5 +11,8 @@
         color: rgba($white, 0.5);
         font-size: 12px;
         letter-spacing: 0.75px;
+        @include breakpoint(small down){
+            padding: 13px 0;
+        }
     }
 }
