@@ -3,11 +3,17 @@
         align-self: center;
         z-index: -1;
         user-select: none;
+        @include breakpoint(medium down){
+            display: none;
+        }
     }
     &_albums{
         display: flex;
         flex-wrap: wrap;
         // justify-content: space-between;
+        @include breakpoint(medium down){
+            justify-content: center;
+        }
     }
     &_album{
         flex: 0 0 calc(50% - 13px);
@@ -17,8 +23,17 @@
         position: relative;
         box-shadow: 0 9px 36px rgba($black, 0.2);
         width: calc(50% - 13px);
+        @include breakpoint(medium down){
+            max-width: 310px;
+            width: calc(50% - 7.5px);
+            flex: 0 0 calc(50% - 7.5px);
+            margin-bottom: 15px;
+        }
         &:nth-child(even){
             margin-left: 26px;
+            @include breakpoint(medium down){
+                margin-left: 15px;
+            }
         }
         &::after{
             content: '';
@@ -53,8 +68,24 @@
         margin-left: 9px;
         max-width: 400px;
         background-color: rgba($secondary-color, 0.2);
+        @include breakpoint(medium down){
+            margin-left: 0;
+            padding: 12px 35px;
+            max-width: 630px;
+            margin: auto;
+        }
+        @include breakpoint(small down){
+            padding-left: 0;
+            padding-right: 15px;
+        }
         & + &{
             margin-top: 45px;
+            @include breakpoint(medium down){
+                margin-top: 33px;
+            }
+            @include breakpoint(small down){
+                margin-top: 20px;
+            }
         }
         &.is_playing .music_song{
             &_cover::after{
@@ -73,6 +104,15 @@
             position: relative;
             box-shadow: 0 2px 24px rgba($black, 0.5);
             flex: 0 0 78px;
+            @include breakpoint(medium down){
+                margin-left: 0;
+            }
+            @include breakpoint(small down){
+                margin: -15px 0;
+                flex: 0 0 65px;
+                width: 65px;
+                height: 65px;
+            }
             &::after{
                 content: '';
                 position: absolute;
@@ -109,6 +149,12 @@
             margin-left: 15px;
             font-family: 'Proxima Nova', Helvetica, Roboto, Arial, sans-serif;
             padding-right: 10px;
+            @include breakpoint(medium down){
+                margin-left: 35px;
+            }
+            @include breakpoint(small down){
+                margin-left: 25px;
+            }
         }
         &_artist{
             color: rgba($white, 0.4);

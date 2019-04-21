@@ -11,21 +11,22 @@ mixin song(is_play)
         a.button.secondary(href="#" target="_blank")
             | iTunes
 
-section.grid-container.container.music
-    .grid-x.grid-margin-x.large-up-2.container_inner
-        .cell.music_photo
-            img(src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord")
-        .cell.music_player
-            ul#music.tabs(data-tabs)
-                li.tabs-title
-                    a(href='#albums', aria-selected='true') Альбомы
-                | 
-                | /
-                | 
-                li.tabs-title
-                    a(href='#songs') Песни
-            .tabs-content(data-tabs-content='music')
-                #albums.tabs-panel.is_active
-                    | Загрузка...
-                #songs.tabs-panel
-                    | Загрузка...
+section.container.music
+    .grid-container
+        .grid-x.grid-margin-x.large-up-2.container_inner
+            .cell.music_photo
+                img(src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord")
+            .cell.music_player
+                ul#music.tabs(data-tabs)
+                    li.tabs-title
+                        a(href='#albums', aria-selected='true') Альбомы
+                    | 
+                    | /
+                    | 
+                    li.tabs-title
+                        a(href='#songs') Песни
+                .tabs-content(data-tabs-content='music')
+                    #albums.tabs-panel.is_active
+                        | Загрузка...
+                    #songs.tabs-panel
+                        | Загрузка...

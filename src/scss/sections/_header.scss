@@ -55,6 +55,7 @@
         @include hamburger($primary-color, darken($primary-color, 15%), 32px, 21px, 3px, 3);
         transition: 300ms;
         display: none;
+        -webkit-tap-highlight-color: transparent;
         @include breakpoint(medium down){
             display: block;
         }
@@ -66,6 +67,7 @@
 
 .close-button{
     transition: 300ms;
+    -webkit-tap-highlight-color: transparent;
     @include breakpoint(small down){
         top: 0.1rem;
         right: 1.5rem;

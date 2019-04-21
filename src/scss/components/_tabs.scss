@@ -13,6 +13,9 @@
         min-height: 618px;
         overflow: hidden;
         border: 0;
+        @include breakpoint(medium down){
+            min-height: auto;
+        }
     }
     &-panel{
         margin-top: 50px;
@@ -20,9 +23,16 @@
         opacity: 0;
         visibility: hidden;
         display: block;
+        @include breakpoint(medium down){
+            display: none;
+            margin-top: 25px;
+        }
         &.is_active{
             opacity: 1;
             visibility: visible;
+            @include breakpoint(medium down){
+                display: block;
+            }
         }
         &#albums{
             margin-top: 25px;
@@ -31,9 +41,15 @@
             top: 0;
             width: 100%;
             z-index: 2;
+            @include breakpoint(medium down){
+                position: static;
+            }
         }
         &#songs{
             padding: 9px 0;
+            @include breakpoint(small down){
+                padding: 3px 0;
+            }
         }
     }
 }

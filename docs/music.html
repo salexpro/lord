@@ -13,14 +13,14 @@
     <meta property="og:description" content="Description">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://lord.salex.pro/assets/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-640x1136.png?ckcachebust=577486611" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-750x1294.png?ckcachebust=577486611" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1242x2148.png?ckcachebust=577486611" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1125x2436.png?ckcachebust=577486611" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1536x2048.png?ckcachebust=577486611" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1668x2224.png?ckcachebust=577486611" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/assets/splash/launch-2048x2732.png?ckcachebust=577486611" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="stylesheet" href="./css/app.css?ckcachebust=44e354dd1dc1a908e490429718b693cc">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-640x1136.png?ckcachebust=577540086" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-750x1294.png?ckcachebust=577540086" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1242x2148.png?ckcachebust=577540086" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1125x2436.png?ckcachebust=577540086" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1536x2048.png?ckcachebust=577540086" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-1668x2224.png?ckcachebust=577540086" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/splash/launch-2048x2732.png?ckcachebust=577540086" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="stylesheet" href="./css/app.css?ckcachebust=b7482aaf3d112a6117b3e4bcfc31afb6">
   </head>
   <body>
     <main class="off-canvas-content wrap" data-off-canvas-content>
@@ -37,19 +37,21 @@
           <button class="header_hamb" data-open="menu"></button>
         </div>
       </header>
-      <section class="grid-container container music">
-        <div class="grid-x grid-margin-x large-up-2 container_inner">
-          <div class="cell music_photo"><img src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord"></div>
-          <div class="cell music_player">
-            <ul class="tabs" id="music" data-tabs>
-              <li class="tabs-title"><a href="#albums" aria-selected="true">Альбомы</a></li> 
-              /
-               
-              <li class="tabs-title"><a href="#songs">Песни</a></li>
-            </ul>
-            <div class="tabs-content" data-tabs-content="music">
-              <div class="tabs-panel is_active" id="albums">Загрузка...</div>
-              <div class="tabs-panel" id="songs">Загрузка...</div>
+      <section class="container music">
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x large-up-2 container_inner">
+            <div class="cell music_photo"><img src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord"></div>
+            <div class="cell music_player">
+              <ul class="tabs" id="music" data-tabs>
+                <li class="tabs-title"><a href="#albums" aria-selected="true">Альбомы</a></li> 
+                /
+                 
+                <li class="tabs-title"><a href="#songs">Песни</a></li>
+              </ul>
+              <div class="tabs-content" data-tabs-content="music">
+                <div class="tabs-panel is_active" id="albums">Загрузка...</div>
+                <div class="tabs-panel" id="songs">Загрузка...</div>
+              </div>
             </div>
           </div>
         </div>
@@ -106,7 +108,7 @@
       <button class="close-button" aria-label="Закрыть" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
     <div class="js-off-canvas-overlay is-overlay-fixed is-closable"></div>
-    <script src="./js/music.min.js?ckcachebust=d3a18bb26b767282b21c841df9887108"></script>
-    <script src="./js/app.min.js?ckcachebust=debe5ad8a977662e2d48d8c2210e04af"></script>
+    <script src="./js/music.min.js?ckcachebust=3d24b89ef9ac20066a5b39703f167ebc"></script>
+    <script src="./js/app.min.js?ckcachebust=b1af0c3f9fd57c09d26379335b982bed"></script>
   </body>
 </html>

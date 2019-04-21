@@ -3,6 +3,7 @@
     padding: 0 68px;
     @include breakpoint(small down){
         padding: 0 20px;
+        transition: margin 300ms;
     }
     &_copy{
         transition: 300ms;
