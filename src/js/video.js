@@ -11,7 +11,7 @@ const videoPlayer = document.querySelector('.video_player');
 const videoPlayerImg = document.querySelector('.video_player_img');
 
 const onPlayerReady = () => {
-    Array.from(document.querySelectorAll('.video_item--small')).forEach(video => {
+    Array.from(document.querySelectorAll('.video_item--small[data-id]')).forEach(video => {
         video.addEventListener('click', () => {
             const currId = video.getAttribute('data-id');
             const playerId = videoPlayer.getAttribute('data-id')

@@ -6,24 +6,25 @@ block const
 
 
 block content
-    section.grid-container.container.video
-        .grid-x.grid-margin-x
-            .cell.large-8
-                .video_item
-                    .responsive-embed.video_player(data-id="UCdMwyIy3ks")
-                        #videoPlayer.video_player_container
-                        .video_player_img
-                            img(src="https://img.youtube.com/vi/UCdMwyIy3ks/maxresdefault.jpg", alt="")
-                    //- button#videoPlayPause.video_button
-            .cell.large-4.video_container--small
-                .responsive-embed.video_item.video_item--small(data-id='kIZhyifo6Q4')
-                    img(src="https://img.youtube.com/vi/kIZhyifo6Q4/maxresdefault.jpg", alt="")
-                .responsive-embed.video_item.video_item--soon
-                    span Скоро
-        .grid-x.grid-margin-x
-            .cell.large-12
-                .video_item.video_item--soon
-                    p Сейчас мы работаем над съемками нового клипа
+    section.container.video
+        .grid-container
+            .grid-x.grid-margin-x
+                .cell.large-8
+                    .video_item
+                        .responsive-embed.video_player(data-id="UCdMwyIy3ks")
+                            #videoPlayer.video_player_container
+                            .video_player_img
+                                img(src="https://img.youtube.com/vi/UCdMwyIy3ks/maxresdefault.jpg", alt="")
+                        //- button#videoPlayPause.video_button
+                .cell.large-4.video_container--small
+                    .responsive-embed.video_item.video_item--small(data-id='kIZhyifo6Q4')
+                        img(src="https://img.youtube.com/vi/kIZhyifo6Q4/maxresdefault.jpg", alt="")
+                    .responsive-embed.video_item.video_item--small.video_item--soon
+                        span Скоро
+            .grid-x.grid-margin-x
+                .cell.large-12
+                    .video_item.video_item--soon
+                        p Сейчас мы работаем над съемками нового клипа
 block js
     script(src="https://www.youtube.com/iframe_api")
     script(src="./js/video.min.js")
