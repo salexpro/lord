@@ -1,7 +1,9 @@
 .video{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    &_inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     &_container{
         &--small{
             padding-left: 20px;
@@ -34,8 +36,9 @@
             }
             > * {
                 position: absolute;
-                width: 100%;
+                width: calc(100% - 20px);
                 top: 50%;
+                left: 10px;
                 transform: translateY(-50%);
                 text-align: center;
             }

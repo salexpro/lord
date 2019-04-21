@@ -6,17 +6,18 @@ block const
 
 
 block content
-    section.grid-container.container.photo
-        .glide.photo_carousel
-            .glide__track(data-glide-el='track')
-                ul.glide__slides
-                    each _, i in Array(3)
-                        li.glide__slide
-                            img(src=`./assets/img/photos/carousel/${i + 1}@2x.jpg`, alt="Lord")
+    section.container.photo
+        .grid-container.photo_inner
+            .glide.photo_carousel
+                .glide__track(data-glide-el='track')
+                    ul.glide__slides
+                        each _, i in Array(3)
+                            li.glide__slide
+                                img(src=`./assets/img/photos/carousel/${i + 1}@2x.jpg`, alt="Lord")
 
-            .glide__arrows(data-glide-el='controls')
-                button.glide__arrow.glide__arrow--left(data-glide-dir='<')
-                button.glide__arrow.glide__arrow--right(data-glide-dir='>')
+                .glide__arrows(data-glide-el='controls')
+                    button.glide__arrow.glide__arrow--left(data-glide-dir='<')
+                    button.glide__arrow.glide__arrow--right(data-glide-dir='>')
 
 block js
     script(src="./js/photo.min.js")

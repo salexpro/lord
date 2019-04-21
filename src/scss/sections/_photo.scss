@@ -1,6 +1,13 @@
 .photo{
-    display: flex;
-    align-items: center;
+    @include breakpoint(medium only){
+        + .social{
+            padding-bottom: 0;
+        }
+    }
+    &_inner{
+        display: flex;
+        align-items: center;
+    }
     &_container{
         width: 100%;
     }
