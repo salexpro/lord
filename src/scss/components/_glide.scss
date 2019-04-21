@@ -51,6 +51,7 @@
         top: 50%;
         transform: translateY(-50%);
         transition: 300ms;
+        -webkit-tap-highlight-color: transparent;
         &::before, &::after{
             content: '';
             transition: 300ms;

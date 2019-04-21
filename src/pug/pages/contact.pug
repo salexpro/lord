@@ -6,16 +6,17 @@ block const
 
 
 block content
-    section.grid-container.container.contact
-        .grid-x.grid-margin-x.container_inner
-            .cell.large-7.music_photo
-                img(src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord")
-            .cell.large-5
-                .contact_box
-                    p.contact_header
-                        | Контакты для сотрудничества:
-                    a(href="mailto:Lord@manager.com" target="_blank")
-                        | Lord@manager.com
-                    +social(socials, 26)(class="social--contact")
+    section.container.contact
+        .grid-container
+            .grid-x.grid-margin-x.container_inner
+                .cell.large-7.music_photo.contact_photo
+                    img(src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord")
+                .cell.large-5.contact_cell
+                    .contact_box
+                        p.contact_header
+                            | Контакты для сотрудничества:
+                        a(href="mailto:Lord@manager.com" target="_blank")
+                            | Lord@manager.com
+                        +social(socials, 26)(class="social--contact")
 
 block js

@@ -1,8 +1,46 @@
 .contact{
+    position: relative;
+    @include breakpoint(medium down){
+        min-height: 470px;
+    }
+    @include breakpoint(small down){
+        min-height: auto;
+    }
+    &_photo{
+        @include breakpoint(medium down){
+            display: block;
+            position: absolute;
+            top: 35px;
+            left: 70px;
+            margin: 0 !important;
+            max-width: 320px;
+        }
+        @include breakpoint(small down){
+            top: 15px;
+            left: 20px;
+            max-width: 240px;
+            transform: none;
+        }
+    }
+    // &_cell{
+    //     @include breakpoint(medium down){
+    //         align-self: center;
+    //     }
+    // }
     &_box{
         padding: 26px 30px;
         background-color: rgba($secondary-color, 0.2);
         margin-top: 78px;
+        @include breakpoint(medium down){
+            max-width: 390px;
+            padding: 35px;
+            background-color: rgba(34, 34, 36, 0.6);
+            margin: auto;
+            margin-top: 350px;
+        }
+        @include breakpoint(small down){
+            margin-top: 250px;
+        }
         a{
             color: $primary-color;
             &:hover, &:focus{
