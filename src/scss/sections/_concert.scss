@@ -13,12 +13,28 @@
         align-items: center;
         justify-content: space-between;
         font-family: 'Proxima Nova', Helvetica, Roboto, Arial, sans-serif;
+        @include breakpoint(medium down){
+            max-width: 630px;
+            padding: 16px 35px;
+        }
+        @include breakpoint(small down){
+            padding: 11px 15px 11px 30px;
+        }
         & + &{
             margin-top: 25px;
+            @include breakpoint(medium down){
+                margin-top: 15px;
+            }
+            @include breakpoint(small down){
+                margin-top: 10px;
+            }
         }
         &_city{
             color: $primary-color;
             margin-bottom: 5px;
+            @include breakpoint(small down){
+                margin: 0;
+            }
         }
         &_date{
             font-size: 12px;

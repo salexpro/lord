@@ -40,15 +40,16 @@ block content
             a.button.secondary(href=data.link target="_blank")
                 | Билеты
     
-    section.grid-container.container.concert
-        .grid-x.grid-margin-x.container_inner
-            .cell.large-7.music_photo
-                img(src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord")
-            .cell.large-5
-                h1.concert_header
-                    | Ближайшие туры
-                .concert_tours
-                    each concert in concerts
-                        +concert(concert)
+    section.container.concert
+        .grid-container
+            .grid-x.grid-margin-x.container_inner
+                .cell.large-7.music_photo
+                    img(src="../assets/img/photos/music.jpg" srcset="../assets/img/photos/music@2x.jpg 2x, ../assets/img/photos/music.jpg 1x" alt="Lord")
+                .cell.large-5
+                    h1.concert_header
+                        | Ближайшие туры
+                    .concert_tours
+                        each concert in concerts
+                            +concert(concert)
                         
 block js
